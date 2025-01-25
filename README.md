@@ -14,3 +14,28 @@ To compile the program, navigate to the project directory and use the provided `
 ```bash
 cd /Users/faisalfarooq/Desktop/TextLineProcessor
 make
+
+faisalfarooq@MacBookPro TextLineProcessor % make
+
+gcc -Wall -Wextra -std=c11 -o stringfun main.c
+faisalfarooq@MacBookPro TextLineProcessor % ls
+
+Makefile        README.md       main.c          stringfun
+faisalfarooq@MacBookPro TextLineProcessor % ./stringfun -h
+
+Usage: stringfun -[h|c|r|w] "sample string"
+faisalfarooq@MacBookPro TextLineProcessor % ./stringfun -c "This is a test string"
+
+Word Count: 5
+faisalfarooq@MacBookPro TextLineProcessor % ./stringfun -r "Reverse this string"
+
+Reversed String: ...............................gnirts siht esreveR
+faisalfarooq@MacBookPro TextLineProcessor % ./stringfun -w "Print words and lengths"
+
+Word Print
+----------
+1. Print (5)
+2. words (5)
+3. and (3)
+4. lengths (7)
+faisalfarooq@MacBookPro TextLineProcessor %  
